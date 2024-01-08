@@ -6,7 +6,6 @@
 [![CodeQL](https://github.com/Sleek-Stream-Theme/Sleek-Stream/actions/workflows/codeql.yml/badge.svg)](https://github.com/Sleek-Stream-Theme/Sleek-Stream/actions/workflows/codeql.yml)
 [![Dependency Review](https://github.com/Sleek-Stream-Theme/Sleek-Stream/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/Sleek-Stream-Theme/Sleek-Stream/actions/workflows/dependency-review.yml)
 [![Pages Deploy](https://github.com/Sleek-Stream-Theme/Sleek-Stream/actions/workflows/hugo.yml/badge.svg)](https://github.com/Sleek-Stream-Theme/Sleek-Stream/actions/workflows/hugo.yml)
-[![Labeler](https://github.com/Sleek-Stream-Theme/Sleek-Stream/actions/workflows/label.yml/badge.svg)](https://github.com/Sleek-Stream-Theme/Sleek-Stream/actions/workflows/label.yml)
 [![GitHub](https://img.shields.io/github/license/Sleek-Stream-Theme/Sleek-Stream)](https://github.com/Sleek-Stream-Theme/Sleek-Stream/blob/main/LICENSE)
 ![Code Size](https://img.shields.io/github/languages/code-size/Sleek-Stream-Theme/Sleek-Stream)
 [![Minimum Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=0.116.0&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.116.0)
