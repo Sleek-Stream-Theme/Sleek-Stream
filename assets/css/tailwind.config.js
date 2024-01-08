@@ -2,6 +2,7 @@
 module.exports = {
     content: [
         "./node_modules/flowbite/**/*.js",
+        'node_modules/preline/dist/*.js',
         "./themes/**/layouts/**/*.html",
         "./content/**/layouts/**/*.html",
         "./layouts/**/*.html",
@@ -12,6 +13,7 @@ module.exports = {
     },
     plugins: [
         require('flowbite/plugin'),
+        require('preline/plugin'),
         require('@tailwindcss/typography'),
         require('@tailwindcss/forms'),
         require('@tailwindcss/aspect-ratio'),
