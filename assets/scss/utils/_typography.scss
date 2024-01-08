@@ -1,0 +1,35 @@
+@layer base {
+    main {
+        @apply prose-sm; //  Apply small prose styles for the main element.
+    }
+
+    @screen sm {
+        main {
+            @apply prose-lg; //  On small screens, apply large prose styles.
+        }
+    }
+
+    @screen md {
+        main {
+            @apply prose-xl; //  On medium screens, apply extra-large prose styles.
+        }
+    }
+
+    @screen lg {
+        main {
+            @apply prose-xl; //  On large screens, apply extra-large prose styles.
+        }
+    }
+
+    @screen xl {
+        main {
+            @apply prose-xl; //  On extra-large screens, apply extra-large prose styles.
+        }
+    }
+
+    @screen 2xl {
+        main {
+            @apply prose-xl; //  On 2xl screens, apply extra-large prose styles.
+        }
+    }
+}

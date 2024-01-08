@@ -1,1 +1,13 @@
+// TAILWINDCSS 
 @import 'tailwind';
+// IMPORT SETTINGS
+@import './utils/settings';
+
+//IMPORT GLOBAL
+@import './utils/globals';
+
+//IMPORT TYPOGRAPHY
+@import './utils/typography';
+
+//IMPORT Components
+@import './components';

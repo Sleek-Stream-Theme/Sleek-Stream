@@ -1,0 +1,46 @@
+@layer components {
+    main {
+        @apply my-4 p-4;
+
+        //   Apply horizontal padding of 1rem to the main component. Additionally, set block display and center the content.
+        img,
+        picture,
+        video,
+        canvas {
+            @apply block overflow-hidden p-4;
+            min-width: $main-width;
+            height: $main-height;
+            margin: $main-margin;
+        }
+    }
+
+    @screen sm {
+        main {
+            @apply px-6; //   On small screens, apply padding of 1.5rem to the main component.
+        }
+    }
+
+    @screen md {
+        main {
+            @apply px-8; // On medium screens, apply padding of 2rem to the main component.
+        }
+    }
+
+    @screen lg {
+        main {
+            @apply px-10; // On large screens, apply padding of 2.5rem to the main component.
+        }
+    }
+
+    @screen xl {
+        main {
+            @apply px-12; // On extra-large screens, apply padding of 3rem to the main component.
+        }
+    }
+
+    @screen 2xl {
+        main {
+            @apply px-14; // On 2xl screens, apply padding of 3.5rem to the main component.
+        }
+    }
+}
