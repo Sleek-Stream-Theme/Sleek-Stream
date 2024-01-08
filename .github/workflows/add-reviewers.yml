@@ -1,0 +1,24 @@
+name: Add Reviewers
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  add-reviewers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Add Reviewers
+        uses: octokit/request-action@v2.x
+        with:
+          route: POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          pull_number: ${{ github.event.pull_request.number }}
+          headers:
+            authorization: "Bearer ${{ secrets.GH_TOKEN }}"
+          body: '{"reviewers": ["username1", "username2"]}'
