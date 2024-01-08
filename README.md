@@ -34,8 +34,6 @@ Sleek Stream is a versatile Hugo theme designed to provide a modern web developm
 - [License](#license)
 - [Stargazers over time](#stargazers-over-time)
 
-
-
 ## 🌟Features
 
 - **🌐Adaptable Design**: Crafted with Tailwind CSS 3.4 for a fully responsive layout.
@@ -57,14 +55,14 @@ Sleek Stream is a versatile Hugo theme designed to provide a modern web developm
 - **📖Thorough Documentation**: Fully documented with regular updates to ensure easy usage and understanding.
 
 ### **UI Libraries/Frameworks:**
+
 - **🎨Preline UI Integration**: Leveraging the Preline UI library for enhanced user interface elements.
-- **🌟Daisi UI Elements**: Incorporating Daisi UI components for a modern and visually appealing design.
 - **🚀Flowbite Styling**: Utilizing Flowbite to enhance the styling and aesthetics of the web project.
 
 ### **Hugo Modules Integration:**
+
 - **🔗Dynamic Content with Hugo Modules**: Leveraging Hugo Modules for efficient management and dynamic loading of content.
 - **🚀Modular Structure**: Utilizing Hugo Modules to enhance the project's modular structure for easier maintenance and extensibility.
-
 
 ## 🛠Installation
 
@@ -132,8 +130,6 @@ Refer to the detailed documentation in the docs directory for advanced customiza
 Once you're satisfied with your changes, deploy your site to your preferred hosting platform.
 
 That's it! You've successfully set up and customized your Hugo site using the Sleek Stream theme. If you encounter any issues or have questions, refer to the [documentation](https://sleek-stream.netlify.app/docs) or seek help from the theme's [GitHub repository](https://github.com/Sleek-Stream-Theme/Sleek-Stream.git).
-
-
 
 ## 🌐Demo
 

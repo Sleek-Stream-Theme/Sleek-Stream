@@ -1,0 +1,6 @@
+# Color Theme for site ('sleekstream' Default
+colorScheme = ''
+
+[Custom]
+Css = false # Disable custom CSS (set to true if you want to enable)
+Js = false # Disable custom JavaScript (set to true if you want to enable)
