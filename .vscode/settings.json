@@ -1,0 +1,14 @@
+{
+    "files.autoSave": "onWindowChange",
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Shades of Purple (Super Dark)",
+    "workbench.preferredDarkColorTheme": "Shades of Purple (Super Dark)",
+    "workbench.preferredHighContrastColorTheme": "Shades of Purple (Super Dark)",
+    "workbench.preferredHighContrastLightColorTheme": "Shades of Purple (Super Dark)",
+    "debug.onTaskErrors": "showErrors",
+    "audioCues.lineHasError": "on",
+    "editor.formatOnType": true,
+    "diffEditor.codeLens": true,
+    "editor.minimap.autohide": true,
+    "editor.inlineSuggest.showToolbar": "always"
+}
