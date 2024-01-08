@@ -1,9 +1,29 @@
-{{- with resources.Get "css/main.css" }}
+{{/* Load the color scheme based on site parameters or use the default "sleekstream" */}}
+{{ $cssSchemePath := printf "scss/schemes/%s.scss" (.Site.Params.colorScheme | default "sleekstream") }}
+{{ $cssScheme := resources.Get $cssSchemePath | toCSS }}
+
+{{/* If the specified color scheme is not found, fallback to a default color scheme ("sleekstream") */}}
+{{ if not $cssScheme }}
+  {{ $cssSchemePath = "scss/schemes/sleekstream.scss" }}
+  {{ $cssScheme = resources.Get $cssSchemePath | toCSS }}
+{{ end }}
+
+{{/* Load the main theme SCSS file */}}
+{{ $mainPath := "scss/theme.scss" }}
+{{ $main := resources.Get $mainPath | toCSS }}
+
+{{/* Concatenate the color scheme and main theme SCSS files into a single CSS file named "theme.bundle.css" */}}
+{{ $css := slice $cssScheme $main | resources.Concat "css/theme.bundle.css" | toCSS }}
+
+{{/* Include the CSS file based on the environment (development or production) */}}
+{{- with $css }}
   {{- if eq hugo.Environment "development" }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{/* Include the CSS file directly in the development environment */}}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" />
   {{- else }}
     {{- with . | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{/* Minify and fingerprint the CSS file for the production environment */}}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" />
     {{- end }}
   {{- end }}
 {{- end }}
