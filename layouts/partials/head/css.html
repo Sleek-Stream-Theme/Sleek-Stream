@@ -13,7 +13,7 @@
 {{ $main := resources.Get $mainPath | toCSS }}
 
 {{/* Concatenate the color scheme and main theme SCSS files into a single CSS file named "theme.bundle.css" */}}
-{{ $css := slice $cssScheme $main | resources.Concat "css/theme.bundle.css" | toCSS }}
+{{ $css := slice $cssScheme $main | resources.Concat "css/theme.bundle.css" | toCSS | postCSS (dict "config" "./assets/css/postcss.config.js") }}
 
 {{/* Include the CSS file based on the environment (development or production) */}}
 {{- with $css }}
