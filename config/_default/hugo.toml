@@ -1,0 +1,6 @@
+# The base URL for your site. Should include the protocol (e.g., 'https://').
+baseURL = 'https://example.org/'
+# The title of your site.
+title = 'Sleek Stream'
+# The default language code for your site.
+languageCode = "en-us"
