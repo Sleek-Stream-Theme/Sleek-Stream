@@ -1,0 +1,21 @@
+name = "Sleek-Stream"
+license = "MIT"
+licenselink = "https://github.com/Sleek-Stream-Theme/Sleek-Stream.git/blob/main/LICENSE"
+description = "Sleek Stream is a versatile Hugo theme designed to provide a modern web development experience."
+homepage = "https://github.com/Sleek-Stream-Theme/Sleek-Stream.git"
+demosite = "https://sleek-stream.netlify.app/"
+tags = [
+  "blog",
+  "minimal",
+  "responsive",
+  "dark mode",
+  "dark",
+  "light",
+  "tailwind",
+  "portfolio",
+]
+features = ["syntax highlighting", "dark mode"]
+
+[author]
+name = "Armoghan-ul-Mohmin"
+homepage = "https://armoghan-portfolio.netlify.app"
