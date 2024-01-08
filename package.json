@@ -1,0 +1,36 @@
+{
+  "name": "sleek-stream",
+  "version": "1.0.0",
+  "description": "Custom Hugo theme with Tailwind CSS, SCSS, Summery Panel, Admin Panel, and Light/Dark theme support.",
+  "scripts": {
+    "dev": "hugo server --buildDrafts --buildFuture --buildExpired --gc --ignoreCache --noBuildLock --logLevel info --watch ",
+    "prod": "hugo server --buildDrafts --buildFuture --buildExpired --gc --ignoreCache --noBuildLock --logLevel info --watch  -e production",
+    "build": "hugo --gc --logLevel info --cleanDestinationDir --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sleek-Stream-Theme/Sleek-Stream.git"
+  },
+  "keywords": [
+    "Hugo",
+    "Custom Theme",
+    "Custom",
+    "Theme",
+    "TailwindCss",
+    "Scss",
+    "Light Mode",
+    "Dark Mode",
+    "Light/Dark Mode",
+    "Admin Panel",
+    "Summery Panel",
+    "Responsive",
+    "Customizeable",
+    "Template"
+  ],
+  "author": "Armoghan-ul-Mohmin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sleek-Stream-Theme/Sleek-Stream/issues"
+  },
+  "homepage": "https://github.com/Sleek-Stream-Theme/Sleek-Stream#readme"
+}

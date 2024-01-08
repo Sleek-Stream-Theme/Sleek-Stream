@@ -1,5 +1,5 @@
 [build]
-command = "hugo --gc --logLevel info --cleanDestinationDir --minify"
+command = "npm run build"
 publish = "public"
 
 [build.environment]
