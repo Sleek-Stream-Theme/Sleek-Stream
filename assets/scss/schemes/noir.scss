@@ -1,0 +1,53 @@
+// noir Theme
+
+@layer base {
+    /* Import Google Fonts */
+    @import url(https://fonts.googleapis.com/css?family=Rakkas|Tinos);
+
+
+    /* Global CSS Variables */
+    :root {
+        --tw-border-opacity: 1;
+
+        /* Color Palette */
+        --neutral: 255 255 255;
+        --neutral-50: 255 255 255;
+        --neutral-100: 255 255 255;
+        --neutral-200: 214 219 222;
+        --neutral-300: 172 183 188;
+        --neutral-400: 129 146 154;
+        --neutral-500: 92 107 115;
+        --neutral-600: 74 86 92;
+        --neutral-700: 56 65 70;
+        --neutral-800: 38 44 47;
+        --neutral-900: 19 23 24;
+        --primary-50: 255 255 255;
+        --primary-100: 255 255 255;
+        --primary-200: 255 255 255;
+        --primary-300: 250 251 252;
+        --primary-400: 204 216 222;
+        --primary-500: 157 180 192;
+        --primary-600: 132 161 176;
+        --primary-700: 107 142 160;
+        --primary-800: 89 121 138;
+        --primary-900: 73 99 113;
+        --secondary-50: 255 255 255;
+        --secondary-100: 255 255 255;
+        --secondary-200: 182 240 255;
+        --secondary-300: 105 225 255;
+        --secondary-400: 28 209 255;
+        --secondary-500: 0 165 207;
+        --secondary-600: 0 132 166;
+        --secondary-700: 0 100 125;
+        --secondary-800: 0 67 85;
+        --secondary-900: 0 35 44;
+        --info: 0 191 255;
+        --success: 74 222 128;
+        --warning: 250 204 21;
+        --error: 216 17 44;
+
+        /* Font Families */
+        --heading: 'Rakkas';
+        --body: 'Tinos';
+    }
+}
