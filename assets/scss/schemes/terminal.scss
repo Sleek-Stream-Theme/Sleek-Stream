@@ -1,0 +1,52 @@
+// Terminal Theme
+
+@layer base {
+    /* Import Google Fonts */
+    @import url(https://fonts.googleapis.com/css?family=Varela|Exo);
+
+    /* Global CSS Variables */
+    :root {
+        --tw-border-opacity: 1;
+
+        /* Color Palette */
+        --neutral: 255 255 255;
+        --neutral-50: 203 255 227;
+        --neutral-100: 126 255 186;
+        --neutral-200: 49 255 145;
+        --neutral-300: 0 228 106;
+        --neutral-400: 0 152 71;
+        --neutral-500: 0 75 35;
+        --neutral-600: 0 50 23;
+        --neutral-700: 0 24 11;
+        --neutral-800: 0 24 11;
+        --neutral-900: 0 0 0;
+        --primary-50: 255 255 255;
+        --primary-100: 236 255 227;
+        --primary-200: 184 255 150;
+        --primary-300: 132 255 74;
+        --primary-400: 80 252 0;
+        --primary-500: 56 176 0;
+        --primary-600: 48 151 0;
+        --primary-700: 40 125 0;
+        --primary-800: 40 125 0;
+        --primary-900: 7 23 0;
+        --secondary-50: 255 255 255;
+        --secondary-100: 239 248 252;
+        --secondary-200: 173 220 242;
+        --secondary-300: 107 192 231;
+        --secondary-400: 41 164 220;
+        --secondary-500: 26 117 159;
+        --secondary-600: 22 101 137;
+        --secondary-700: 19 85 115;
+        --secondary-800: 19 85 115;
+        --secondary-900: 4 20 28;
+        --info: 0 191 255;
+        --success: 74 222 128;
+        --warning: 250 204 21;
+        --error: 216 17 44;
+
+        /* Font Families */
+        --heading: 'Varela';
+        --body: 'Exo';
+    }
+}

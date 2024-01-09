@@ -1,15 +1,16 @@
-// Sleek Stream Theme
+// Ocean Theme
 
 @layer base {
     /* Import Google Fonts */
-    @import url(https://fonts.googleapis.com/css?family=Jolly-Lodger|Volkhov);
+    @import url(https://fonts.googleapis.com/css?family=Coda|Aref-Ruqaa);
+
 
     /* Global CSS Variables */
     :root {
         --tw-border-opacity: 1;
 
         /* Color Palette */
-        --tw-border-opacity: 1;
+
         --neutral: 255 255 255;
         /* Gray */
         --neutral-50: 248 250 252;
@@ -50,7 +51,7 @@
         --error: 216 17 44;
 
         /* Font Families */
-        --heading: 'Volkhov';
-        --body: 'Jolly-Lodger';
+        --heading: 'Coda';
+        --body: 'Aref-Ruqaa';
     }
 }

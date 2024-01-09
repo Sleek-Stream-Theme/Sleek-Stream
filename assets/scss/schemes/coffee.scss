@@ -1,0 +1,26 @@
+// Coffee Theme
+
+@layer base {
+    /* Import Google Fonts */
+    @import url(https://fonts.googleapis.com/css?family=Finger-Paint|El-Messiri);
+
+    /* Global CSS Variables */
+    :root {
+        --tw-border-opacity: 1;
+
+        /* Color Palette */
+        --neutral: 28 23 20;
+        --primary: 255 0 152;
+        --secondary: 0 158 255;
+        --accent: 0 92 244;
+        --base: 39 34 1;
+        --info: 0 112 255;
+        --success: 0 171 0;
+        --warning: 255 123 0;
+        --error: 255 137 156;
+
+        /* Font Families */
+        --heading: 'Finger-Paint';
+        --body: 'El-Messiri';
+    }
+}

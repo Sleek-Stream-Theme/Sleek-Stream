@@ -1,0 +1,54 @@
+// Avocado Theme
+
+@layer base {
+    /* Import Google Fonts */
+    @import url(https://fonts.googleapis.com/css?family=Battambang|Mrs-Sheppards);
+
+    :root {
+        --tw-border-opacity: 1;
+
+        /* Color Palette */
+        --neutral: 255 255 255;
+        /* Stone */
+        --neutral-50: 250 250 249;
+        --neutral-100: 245 245 244;
+        --neutral-200: 231 229 228;
+        --neutral-300: 214 211 209;
+        --neutral-400: 168 162 158;
+        --neutral-500: 120 113 108;
+        --neutral-600: 87 83 78;
+        --neutral-700: 68 64 60;
+        --neutral-800: 41 37 36;
+        --neutral-900: 28 25 23;
+        /* Lime */
+        --primary-50: 247 254 231;
+        --primary-100: 236 252 203;
+        --primary-200: 217 249 157;
+        --primary-300: 190 242 100;
+        --primary-400: 163 230 53;
+        --primary-500: 132 204 22;
+        --primary-600: 101 163 13;
+        --primary-700: 77 124 15;
+        --primary-800: 63 98 18;
+        --primary-900: 54 83 20;
+        /* Emerald */
+        --secondary-50: 236 253 245;
+        --secondary-100: 209 250 229;
+        --secondary-200: 167 243 208;
+        --secondary-300: 110 231 183;
+        --secondary-400: 52 211 153;
+        --secondary-500: 16 185 129;
+        --secondary-600: 5 150 105;
+        --secondary-700: 4 120 87;
+        --secondary-800: 6 95 70;
+        --secondary-900: 6 78 59;
+        --info: 0 191 255;
+        --success: 74 222 128;
+        --warning: 250 204 21;
+        --error: 216 17 44;
+
+        /* Font Families */
+        --heading: 'Battambang';
+        --body: 'Mrs-Sheppards';
+    }
+}
