@@ -1,0 +1,26 @@
+// Sleek Stream Theme
+
+@layer base {
+    /* Import Google Fonts */
+    @import url(https://fonts.googleapis.com/css?family=Jolly-Lodger|Volkhov);
+
+    /* Global CSS Variables */
+    :root {
+        --tw-border-opacity: 1;
+
+        /* Color Palette */
+        --neutral: 107 114 128;
+        --primary: 124 58 237;
+        --secondary: 59 130 246;
+        --accent: 100 133 0;
+        --base: 23 34 48;
+        --info: 0 191 255;
+        --success: 74 222 128;
+        --warning: 250 204 21;
+        --error: 216 17 44;
+
+        /* Font Families */
+        --heading: 'Volkhov';
+        --body: 'Jolly-Lodger';
+    }
+}
