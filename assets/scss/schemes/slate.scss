@@ -1,0 +1,57 @@
+// Slate Theme
+
+@layer base {
+    /* Import Google Fonts */
+    @import url(https://fonts.googleapis.com/css?family=Ruge-Boogie|IBM-Plex-Serif);
+
+
+    /* Global CSS Variables */
+    :root {
+        --tw-border-opacity: 1;
+
+        /* Color Palette */
+        --neutral: 255 255 255;
+        /* Gray */
+        --neutral-50: 249 250 251;
+        --neutral-100: 243 244 246;
+        --neutral-200: 229 231 235;
+        --neutral-300: 209 213 219;
+        --neutral-400: 156 163 175;
+        --neutral-500: 107 114 128;
+        --neutral-600: 75 85 99;
+        --neutral-700: 55 65 81;
+        --neutral-800: 31 41 55;
+        --neutral-900: 17 24 39;
+        /* Slate */
+        --primary-50: 248 250 252;
+        --primary-100: 241 245 249;
+        --primary-200: 226 232 240;
+        --primary-300: 203 213 225;
+        --primary-400: 148 163 184;
+        --primary-500: 100 116 139;
+        --primary-600: 71 85 105;
+        --primary-700: 51 65 85;
+        --primary-800: 30 41 59;
+        --primary-900: 15 23 42;
+        /* Gray */
+        --secondary-50: 249 250 251;
+        --secondary-100: 243 244 246;
+        --secondary-200: 229 231 235;
+        --secondary-300: 209 213 219;
+        --secondary-400: 156 163 175;
+        --secondary-500: 107 114 128;
+        --secondary-600: 75 85 99;
+        --secondary-700: 55 65 81;
+        --secondary-800: 31 41 55;
+        --secondary-900: 17 24 39;
+        --info: 0 191 255;
+        --success: 74 222 128;
+        --warning: 250 204 21;
+        --error: 216 17 44;
+
+        /* Font Families */
+        --heading: 'Ruge-Boogie';
+        --body: 'Lexend-Mega';
+    }
+
+}
