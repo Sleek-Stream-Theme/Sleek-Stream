@@ -1,0 +1,26 @@
+//  Theme
+
+@layer base {
+    /* Import Google Fonts */
+    @import url(https://fonts.googleapis.com/css?family=Saira-Condensed|Leckerli-One);
+
+    /* Global CSS Variables */
+    :root {
+        --tw-border-opacity: 1;
+
+        /* Color Palette */
+        --neutral: 161 161 170;
+        --primary: 167 139 250;
+        --secondary: 232 121 249;
+        --accent: 0 245 255;
+        --base: 35 37 32;
+        --info: 0 154 255;
+        --success: 108 164 0;
+        --warning: 184 104 0;
+        --error: 223 0 36;
+
+        /* Font Families */
+        --heading: 'Saira-Condensed';
+        --body: 'Leckerli-One';
+    }
+}
