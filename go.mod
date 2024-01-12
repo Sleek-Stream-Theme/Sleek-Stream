@@ -1,6 +1,6 @@
 module github.com/Sleek-Stream-Theme/Sleek-Stream
 
-go 1.21.5
+go 1.21
 
 require (
 	github.com/hugomods/icons v0.6.0 // indirect
