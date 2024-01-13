@@ -8,6 +8,16 @@ languageCode = "en-us"
 DefaultContentLanguage = "en"
 # Enable or disable the generation of a robots.txt file.
 enableRobotsTXT = true
+# The number of items to display per page in paginated lists.
+paginate = 10
+
+[taxonomies]
+# 'categories' taxonomy is used for categorizing content
+category = 'categories'
+# 'series' taxonomy is used for grouping content into series
+series = 'series'
+# 'tags' taxonomy is used for tagging content
+tag = 'tags'
 
 # Sitemap configuration
 [sitemap]
