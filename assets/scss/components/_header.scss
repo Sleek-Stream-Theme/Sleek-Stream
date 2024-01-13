@@ -1,0 +1,119 @@
+@layer utilities {
+    header {
+        @apply bg-neutral-300 dark:bg-neutral-900 p-1;
+
+        nav#main {
+            #wraper {
+                @apply flex items-center justify-between border-b px-2 md:px-5 md:py-2;
+
+                #logo {
+                    @apply flex items-center gap-2;
+
+                    img {
+                        @apply h-10 w-10 md:h-12 md:w-12;
+                    }
+
+                    #line {
+                        @apply bg-primary-400 dark:bg-primary-200 h-10 w-[1.5px] md:h-12;
+                    }
+
+                    #title {
+                        @apply text-primary-700 dark:text-primary-400 text-2xl font-bold md:text-3xl;
+                    }
+
+                    #subtitle {
+                        @apply text-primary-400 dark:text-primary-300 font-medium text-xl md:text-2xl;
+                    }
+                }
+
+                #content {
+                    @apply flex items-center;
+
+                    #main-menu {
+                        @apply hidden md:block lg:block;
+
+                        ul {
+                            @apply text-primary-700 dark:text-primary-400 flex items-center justify-center text-base;
+
+                            a {
+                                @apply hover:after:bg-primary-600 mr-6 pt-2 text-center after:m-auto after:block after:h-[3px] after:w-0 after:transition-all after:duration-300 hover:after:w-[100%];
+
+                                li {
+                                    #icon {
+                                        @apply flex w-9 overflow-hidden;
+
+                                        svg {
+                                            @apply w-5 h-5;
+                                        }
+                                    }
+
+                                    #item {
+                                        @apply text-base md:text-lg;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    #icons {
+                        @apply flex items-center;
+
+                        #search-button {
+                            @apply pr-2;
+
+                            svg {
+                                @apply w-6 h-6;
+                            }
+                        }
+
+                        #theme-toggle {
+                            @apply pl-2;
+
+                            #moon {
+                                img {
+                                    @apply h-6 w-6 md:h-8 md:w-8;
+                                }
+                            }
+
+                            #sun {
+                                img {
+                                    @apply h-6 w-6 md:h-8 md:w-8;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        nav#secondNav {
+            @apply text-primary-600 dark:text-primary-300 md:hidden;
+
+            #wraper {
+                @apply fixed bottom-0 left-0 right-0 bg-neutral-300 py-3 shadow dark:bg-neutral-900;
+
+                ul {
+                    @apply ml-4 mr-0 flex items-center justify-between;
+
+                    li {
+                        @apply hover:after:bg-primary-600 mr-6 pt-2 text-center after:m-auto after:block after:h-[3px] after:w-0 after:transition-all after:duration-300 hover:after:w-[100%];
+
+                        a {
+                            #pre {
+                                @apply mx-auto h-6 w-6 overflow-hidden;
+
+                                svg {
+                                    @apply w-6 h-6;
+                                }
+                            }
+
+                            #item {
+                                @apply text-base;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
