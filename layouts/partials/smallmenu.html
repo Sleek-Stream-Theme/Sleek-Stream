@@ -1,11 +1,11 @@
 {{ range .Site.Menus.mainmenu }}
-  <li>
-    <a href="{{ .URL }}">
+  <a href="{{ .URL }}">
+    <li>
       <div id="pre">
         {{ $context := dict "vendor" "bootstrap" "name" (.Pre | safeHTML) }}
         {{ partial "icons/icon" $context }}
       </div>
       <div id="item">{{ .Name }}</div>
-    </a>
-  </li>
+    </li>
+  </a>
 {{ end }}
