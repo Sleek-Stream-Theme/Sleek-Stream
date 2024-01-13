@@ -65,9 +65,9 @@
             }
         },
         "keywords": "{{ with .Params.keywords }}{{ delimit . ", " }}{{ end }}",
-        "tags": {{ with .Params.tags }}"{{ . }}"{{ end }},
-        "categories": {{ with .Params.categories }}"{{ . }}"{{ end }},
-        "series": {{ with .Params.series }}"{{ . }}"{{ end }},
+        {{ if .Params.Tags }}"tags":  {{ with .Params.tags }}"{{ . }}"{{ end }}, {{ end }}
+        {{ if .Params.categories }} "categories":{{ with .Params.categories }}"{{ . }}"{{ end }}, {{ end }}
+        {{ if .Params.series }}"series": {{ with .Params.series }}"{{ . }}"{{ end }}, {{ end }}
         "articleSection": "{{ .Section }}",
         "articleBody": "{{ .Content | plainify }}"
     }
