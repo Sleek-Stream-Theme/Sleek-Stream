@@ -1,5 +1,7 @@
 # Color Theme for site ('sleekstream' Default) ( 'terminal' 'fire' 'ocean' 'slate' 'autum' 'neon' 'avacado' 'princess' 'marvel' 'forest' 'noir' 'congo' 'blood')
 colorScheme = ''
+# Keywords associated with the site
+keywords = ['site , template']
 
 [Custom]
 Css = false # Disable custom CSS (set to true if you want to enable)
