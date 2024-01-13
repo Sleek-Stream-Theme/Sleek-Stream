@@ -35,10 +35,10 @@
                         ul {
                             @apply text-primary-700 dark:text-primary-400 flex items-center justify-center text-base;
 
-                            a {
+                            li {
                                 @apply overflow-hidden hover:after:bg-primary-600 mr-6 pt-2 text-center after:m-auto after:block after:h-[3px] after:w-0 after:transition-all after:duration-300 hover:after:w-[100%];
 
-                                li {
+                                a {
                                     #icon {
                                         @apply flex w-9 overflow-hidden;
 

@@ -1,9 +1,7 @@
     {{ partial "head.html" . }}
   <body>
-    <header>
       {{ partial "header.html" . }}
       {{- partial "dev/dev-tools.html" . -}}
-    </header>
     <main>
       {{ block "main" . }}{{ end }}
     </main>
