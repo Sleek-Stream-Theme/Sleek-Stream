@@ -2,6 +2,12 @@
 colorScheme = ''
 # Keywords associated with the site
 keywords = ['site , template']
+# Social media links
+twitter = "@Armoghan12"
+# Facebook Admins ID for Open Graph meta tag
+facebookAdmins = "000000000000000"
+# Facebook App ID for Open Graph meta tag
+facebookAppID = "000000000000000"
 
 [Custom]
 Css = false # Disable custom CSS (set to true if you want to enable)
