@@ -27,7 +27,7 @@
         </image:image>
       {{ end }}
       {{ if .Params.keywords }}
-        <keywords>{{ .Params.keywords | join: ", " }}</keywords>
+        <keywords>{{ range .Params.keywords }}{{ . }}{{ if not (last $.Params.keywords .) }}, {{ end }}{{ end }}</keywords>
       {{ end }}
       {{ if .Params.noindex }}
         <robots>noindex</robots>
