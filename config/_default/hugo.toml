@@ -10,6 +10,8 @@ DefaultContentLanguage = "en"
 enableRobotsTXT = true
 # The number of items to display per page in paginated lists.
 paginate = 10
+# Convert relative URLs to their absolute counterparts.
+canonifyURLs = true
 
 [taxonomies]
 # 'categories' taxonomy is used for categorizing content
