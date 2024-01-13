@@ -1,4 +1,9 @@
 @layer components {
+    body {
+        @apply bg-neutral-100 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200;
+        @apply bg-neutral-200 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200;
+    }
+
     main {
         @apply my-4 p-4;
 
@@ -42,5 +47,15 @@
         main {
             @apply px-14; // On 2xl screens, apply padding of 3.5rem to the main component.
         }
+    }
+
+    // Hugo Icons Module Speacific
+    svg {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    footer {
+        @apply p-6 mb-16 md:mb-0 md:p-0;
     }
 }

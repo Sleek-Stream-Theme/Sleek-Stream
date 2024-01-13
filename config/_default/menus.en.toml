@@ -1,14 +1,26 @@
-[[main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
+# ======================================= #
+# ============= Main Menu =============== #
+# ======================================= #
+[[mainmenu]]
+name = "Home"
+url = "/"
+pre = "house-door"
+weight = 1
 
-[[main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
+[[mainmenu]]
+name = "About"
+url = "/about"
+pre = 'person'
+weight = 2
 
-[[main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
+[[mainmenu]]
+name = "Posts"
+url = "/posts"
+pre = 'file-earmark-text'
+weight = 3
+
+[[mainmenu]]
+name = "Contact"
+url = "/contact"
+pre = 'phone'
+weight = 4
