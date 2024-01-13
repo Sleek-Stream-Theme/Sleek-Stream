@@ -1,5 +1,42 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-{{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}
+<!doctype html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+  <head itemscope itemtype="{{ .Site.BaseURL }}">
+    <!-- Character set and encoding -->
+    <meta charset="utf-8" />
+
+    <!-- Responsive design viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- ======================================================================== -->
+    <!-- ========================== Hugo SEO Meta Tags ========================== -->
+    <!-- ========================================================================-->
+    <!-- Language meta tags -->
+    {{- partial "meta/Language.html" . -}}
+    <!-- Date meta tags -->
+    {{- partial "meta/Date.html" . -}}
+    <!-- Link meta tags -->
+    {{- partial "meta/Link.html" . -}}
+    <!-- Search Engine Crawler meta tags -->
+    {{- partial "meta/Search-Engine-Crawler.html" . -}}
+    <!-- Other meta tags -->
+    {{- partial "meta/Other.html" . -}}
+    <!-- Social Media meta tags -->
+    {{- partial "meta/Social-Media.html" . -}}
+    <!-- Website meta tags -->
+    {{- partial "meta/Website.html" . -}}
+    <!-- Article meta tags -->
+    {{- partial "meta/Article.html" . -}}
+    <!-- Image meta tags -->
+    {{- partial "meta/Image.html" . -}}
+    <!-- Favicon meta tags -->
+    {{- partial "meta/Favicon.html" . -}}
+    <!-- Description meta tags -->
+    {{- partial "meta/Description.html" . -}}
+    <!-- Title meta tags -->
+    {{- partial "meta/Title.html" . -}}
+    <!-- ======================================================================== -->
+    <!-- =============================== Styling ================================ -->
+    <!-- ========================================================================-->
+    {{- partialCached "head/css.html" . -}}
+  </head>
+</html>

@@ -4,8 +4,8 @@
   "description": "Custom Hugo theme with Tailwind CSS, SCSS, Summery Panel, Admin Panel, and Light/Dark theme support.",
   "scripts": {
     "npm-check": "npm-check -u",
-    "dev": "hugo server --buildDrafts --buildFuture --buildExpired --gc --ignoreCache --noBuildLock --logLevel info --watch ",
-    "prod": "hugo server --buildDrafts --buildFuture --buildExpired --gc --ignoreCache --noBuildLock --logLevel info --watch  -e production",
+    "dev": "hugo server --buildDrafts --buildFuture --buildExpired --gc --ignoreCache --noBuildLock --logLevel info --watch --disableFastRender",
+    "prod": "hugo server --buildDrafts --buildFuture --buildExpired --gc --ignoreCache --noBuildLock --logLevel info --watch  -e production --disableFastRender",
     "build": "hugo --gc --logLevel info --cleanDestinationDir --minify"
   },
   "repository": {

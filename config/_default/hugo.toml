@@ -1,9 +1,34 @@
 # The base URL for your site. Should include the protocol (e.g., 'https://').
-baseURL = 'https://example.org/'
+baseURL = 'https://sleek-stream.netlify.app/'
 # The title of your site.
 title = 'Sleek Stream'
 # The default language code for your site.
 languageCode = "en-us"
+# Default content language for multilingual sites.
+DefaultContentLanguage = "en"
+# Enable or disable the generation of a robots.txt file.
+enableRobotsTXT = true
+# The number of items to display per page in paginated lists.
+paginate = 10
+# Convert relative URLs to their absolute counterparts.
+canonifyURLs = true
+
+[taxonomies]
+# 'categories' taxonomy is used for categorizing content
+category = 'categories'
+# 'series' taxonomy is used for grouping content into series
+series = 'series'
+# 'tags' taxonomy is used for tagging content
+tag = 'tags'
+
+# Sitemap configuration
+[sitemap]
+# Frequency of change for pages in the sitemap (e.g., 'daily').
+changefreq = 'daily'
+# Filename for the generated sitemap.
+filename = 'sitemap.xml'
+# Priority of pages in the sitemap (value between 0.0 and 1.0).
+priority = 0.5
 
 [module]
 

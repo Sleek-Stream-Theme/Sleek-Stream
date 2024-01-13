@@ -1,5 +1,21 @@
 # Color Theme for site ('sleekstream' Default) ( 'terminal' 'fire' 'ocean' 'slate' 'autum' 'neon' 'avacado' 'princess' 'marvel' 'forest' 'noir' 'congo' 'blood')
 colorScheme = ''
+# Site Description
+Description = 'Custom Hugo theme with Tailwind CSS, SCSS, Summery Panel, Admin Panel, and Light/Dark theme support.'
+# Keywords associated with the site
+keywords = ['site , template']
+# Social media links
+facebook = "https://www.facebook.com/armoghanul.mohmin"
+twitter = "@Armoghan12"
+github = "https://github.com/Armoghan-ul-Mohmin"
+# Facebook Admins ID for Open Graph meta tag
+facebookAdmins = "000000000000000"
+# Facebook App ID for Open Graph meta tag
+facebookAppID = "000000000000000"
+# Author information
+author = "Armoghan-ul-Mohmin"
+# image fallback
+og_image = ""
 
 [Custom]
 Css = false # Disable custom CSS (set to true if you want to enable)

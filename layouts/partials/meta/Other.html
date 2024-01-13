@@ -1,0 +1,33 @@
+<!-- Theme Color for browsers -->
+<meta name="theme-color" content="#3b3b3b" />
+<!-- Tile Color for Windows browsers -->
+<meta name="msapplication-TileColor" content="#3b3b3b" />
+<!-- Meta tag for forcing image rendering mode -->
+<meta name="imagemode" content="force" />
+<!-- Meta tags for coverage and distribution -->
+<meta name="coverage" content="Worldwide" />
+<meta name="distribution" content="Global" />
+<!-- Meta tag for indicating that the page is handheld-friendly -->
+<meta name="HandheldFriendly" content="True" />
+<!-- Meta tag to prevent tap highlighting on mobile devices -->
+<meta name="msapplication-tap-highlight" content="no" />
+<!-- Meta tags for Apple mobile web app -->
+<meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-touch-fullscreen" content="yes" />
+
+<!-- Meta tag for keywords (please fill in the actual keywords) -->
+{{ if .IsHome }}
+  {{ with .Site.Params.Keywords }}
+    <meta name="keywords" content="{{ delimit . ", " | safeHTML }}" />
+  {{ end }}
+{{ else if not .Params.Keywords }}
+  <meta name="keywords" content="{{ .Title }} | {{ .Site.Title }}" />
+{{ else }}
+  {{ with .Params.Keywords }}
+    <meta name="keywords" content="{{ delimit . ", " | safeHTML }}" />
+  {{ else }}
+    <meta name="keywords" content="{{ .Title }} | {{ .Site.Title }}" />
+  {{ end }}
+{{ end }}

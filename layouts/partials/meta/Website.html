@@ -1,0 +1,31 @@
+{{ if ne .Type "posts" }}
+  <!-- Open Graph meta tag for specifying the type of content (website) -->
+  <meta property="og:type" content="website" />
+  <!-- Meta tag for specifying the author of the page -->
+  <meta name="author" content="{{ .Site.Params.author }}" />
+  <!-- JSON-LD structured data script for defining the website information -->
+  <script defer type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "{{ .Permalink }}",
+      "sameAs": ["{{ .Site.Params.facebook }}", "{{ .Site.Params.github }}"],
+      "name": "{{ .Title }}",
+      "description": "{{ .Description }}",
+      "logo": "{{ .Site.BaseURL }}/images/Favicons/favicon.png",
+      "image": "{{ .Site.BaseURL }}/images/og-image.jpg", // Add an image URL for the website
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ .Site.Params.author }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ .Site.BaseURL }}/images/Favicons/favicon.png" // Logo for the organization
+        }
+      },
+      "author": {
+        "@type": "Person",
+        "name": "{{ .Site.Params.author }}"
+      }
+    }
+  </script>
+{{ end }}
