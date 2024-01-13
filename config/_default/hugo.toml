@@ -6,6 +6,8 @@ title = 'Sleek Stream'
 languageCode = "en-us"
 # Default content language for multilingual sites.
 DefaultContentLanguage = "en"
+# Enable or disable the generation of a robots.txt file.
+enableRobotsTXT = true
 
 # Sitemap configuration
 [sitemap]
