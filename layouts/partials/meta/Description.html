@@ -1,0 +1,23 @@
+{{ if .IsHome }}
+  {{ with .Site.Params.Description }}
+    <!-- Meta tag for page description -->
+    <meta name="description" content="{{ . | safeHTML }}" />
+    <!-- Meta tag for structured data description -->
+    <meta itemprop="description" content="{{ . | safeHTML }}" />
+    <!-- Open Graph meta tag for description -->
+    <meta property="og:description" content="{{ . | safeHTML }}" />
+    <!-- Twitter meta tag for description -->
+    <meta name="twitter:description" content="{{ . | safeHTML }}" />
+  {{ end }}
+{{ else }}
+  {{ with .Params.Description }}
+    <!-- Meta tag for page description -->
+    <meta name="description" content="{{ . | safeHTML }}" />
+    <!-- Meta tag for structured data description -->
+    <meta itemprop="description" content="{{ . | safeHTML }}" />
+    <!-- Open Graph meta tag for description -->
+    <meta property="og:description" content="{{ . | safeHTML }}" />
+    <!-- Twitter meta tag for description -->
+    <meta name="twitter:description" content="{{ . | safeHTML }}" />
+  {{ end }}
+{{ end }}
