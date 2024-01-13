@@ -12,6 +12,8 @@ facebookAdmins = "000000000000000"
 facebookAppID = "000000000000000"
 # Author information
 author = "Armoghan-ul-Mohmin"
+# image fallback
+og_image = ""
 
 [Custom]
 Css = false # Disable custom CSS (set to true if you want to enable)

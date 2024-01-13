@@ -1,0 +1,17 @@
+{{ with .Params.image }}
+  <!-- Meta tag for structured data image -->
+  <meta itemprop="image" content="{{ . | absURL }}" />
+  <!-- Open Graph meta tag for image -->
+  <meta property="og:image" content="{{ . | absURL }}" />
+  <!-- Twitter meta tags for image -->
+  <meta name="twitter:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image:src" content="{{ . | absURL }}" />
+{{ else }}
+  <!-- Meta tag for structured data image (fallback) -->
+  <meta itemprop="image" content="{{ .Site.Params.og_image | absURL }}" />
+  <!-- Open Graph meta tag for image (fallback) -->
+  <meta property="og:image" content="{{ .Site.Params.og_image | absURL }}" />
+  <!-- Twitter meta tags for image (fallback) -->
+  <meta name="twitter:image" content="{{ .Site.Params.og_image | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Site.Params.og_image | absURL }}" />
+{{ end }}
