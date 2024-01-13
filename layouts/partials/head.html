@@ -1,5 +1,22 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-{{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}
+<!doctype html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+  <head itemscope itemtype="{{ .Site.BaseURL }}">
+    <!-- Character set and encoding -->
+    <meta charset="utf-8" />
+
+    <!-- Responsive design viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- ======================================================================== -->
+    <!-- ========================== Hugo SEO Meta Tags ========================== -->
+    <!-- ========================================================================-->
+    <!-- Language meta tags -->
+    {{- partial "meta/Language.html" . -}}
+
+
+    <!-- ======================================================================== -->
+    <!-- =============================== Styling ================================ -->
+    <!-- ========================================================================-->
+    {{- partialCached "head/css.html" . -}}
+  </head>
+</html>

@@ -4,6 +4,7 @@ baseURL = 'https://example.org/'
 title = 'Sleek Stream'
 # The default language code for your site.
 languageCode = "en-us"
+DefaultContentLanguage = "en"
 
 [module]
 
