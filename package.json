@@ -36,7 +36,7 @@
   "homepage": "https://github.com/Sleek-Stream-Theme/Sleek-Stream#readme",
   "devDependencies": {
     "npm-check": "^6.0.1",
-    "prettier": "^3.1.1",
+    "prettier": "^3.2.2",
     "prettier-plugin-go-template": "^0.0.15",
     "prettier-plugin-tailwindcss": "^0.5.10"
   },
