@@ -20,6 +20,8 @@ category = 'categories'
 series = 'series'
 # 'tags' taxonomy is used for tagging content
 tag = 'tags'
+# 'author' taxonomy is used for authors Information.
+author = 'authors'
 
 # Sitemap configuration
 [sitemap]

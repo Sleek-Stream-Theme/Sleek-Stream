@@ -35,8 +35,8 @@ pre = ""
 weight = 1
 
 [[footermenu]]
-name = "Section"
-url = "/section"
+name = "Categories"
+url = "/categories"
 pre = ""
 weight = 2
 
@@ -47,7 +47,7 @@ pre = ""
 weight = 3
 
 [[footermenu]]
-name = "Newsletter"
-url = "/newsletter"
+name = "Authors"
+url = "/authors"
 pre = ""
 weight = 4
