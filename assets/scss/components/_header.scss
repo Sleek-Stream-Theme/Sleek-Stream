@@ -1,6 +1,6 @@
 @layer utilities {
     header {
-        @apply bg-neutral-300 dark:bg-neutral-900 p-1;
+        @apply bg-neutral-300 dark:bg-neutral-900 p-1 rounded-lg mx-1;
 
         nav#main {
             #wraper {
