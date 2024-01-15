@@ -24,3 +24,30 @@ name = "Contact"
 url = "/contact"
 pre = 'phone'
 weight = 4
+
+# ======================================= #
+# ============ Footer Menu ============== #
+# ======================================= #
+[[footermenu]]
+name = "Tags"
+url = "/tags"
+pre = ""
+weight = 1
+
+[[footermenu]]
+name = "Section"
+url = "/section"
+pre = ""
+weight = 2
+
+[[footermenu]]
+name = "Series"
+url = "/series"
+pre = ""
+weight = 3
+
+[[footermenu]]
+name = "Newsletter"
+url = "/newsletter"
+pre = ""
+weight = 4

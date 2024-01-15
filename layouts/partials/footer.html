@@ -1,3 +1,12 @@
 <footer>
-  <p>Copyright {{ now.Year }}. All rights reserved.</p>
+  <div id="wraper">
+    <span> © {{ now.Year }}. <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}™</a>. All Rights Reserved. </span>
+    <ul>
+      {{ range .Site.Menus.footermenu }}
+        <li>
+          <a href="{{ .URL }}" aria-current="page">{{ .Pre }} <span>{{ .Name }}</span></a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
 </footer>
