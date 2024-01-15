@@ -116,4 +116,35 @@
             }
         }
     }
+
+    #search-modal {
+        @apply fixed top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-auto overflow-x-hidden z-50 w-full max-h-full;
+
+        #wraper {
+            @apply p-4 mx-auto bg-white rounded-lg shadow dark:bg-neutral-700 w-2/3 md:w-2/3 lg:w-1/2 xl:w-1/2;
+
+            #main-container {
+                @apply p-4 md:p-5 text-center;
+
+                form {
+
+                    #search-wraper {
+                        @apply relative;
+
+                        #search-icon {
+                            @apply absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none;
+                        }
+
+                        input {
+                            @apply block w-full p-4 ps-10 text-sm border border-neutral-300 rounded-lg bg-neutral-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:focus:ring-primary-500 dark:focus:border-primary-500;
+                        }
+
+                        button {
+                            @apply absolute end-2.5 bottom-2.5 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
