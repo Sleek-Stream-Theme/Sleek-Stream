@@ -1,6 +1,6 @@
 @layer utilities {
     header {
-        @apply bg-neutral-300 dark:bg-neutral-900 p-1 rounded-lg mx-1;
+        @apply mx-1 rounded-lg bg-neutral-300 p-1 dark:bg-neutral-900;
 
         nav#main {
             #wraper {
@@ -22,7 +22,7 @@
                     }
 
                     #subtitle {
-                        @apply text-primary-400 dark:text-primary-300 font-medium text-xl md:text-2xl;
+                        @apply text-primary-400 dark:text-primary-300 text-xl font-medium md:text-2xl;
                     }
                 }
 
@@ -36,14 +36,14 @@
                             @apply text-primary-700 dark:text-primary-400 flex items-center justify-center text-base;
 
                             li {
-                                @apply overflow-hidden hover:after:bg-primary-600 mr-6 pt-2 text-center after:m-auto after:block after:h-[3px] after:w-0 after:transition-all after:duration-300 hover:after:w-[100%];
+                                @apply hover:after:bg-primary-600 mr-6 overflow-hidden pt-2 text-center after:m-auto after:block after:h-[3px] after:w-0 after:transition-all after:duration-300 hover:after:w-[100%];
 
                                 a {
                                     #icon {
                                         @apply flex w-9 overflow-hidden;
 
                                         svg {
-                                            @apply w-5 h-5;
+                                            @apply h-5 w-5;
                                         }
                                     }
 
@@ -62,7 +62,7 @@
                             @apply pr-2;
 
                             svg {
-                                @apply w-6 h-6;
+                                @apply h-6 w-6;
                             }
                         }
 
@@ -103,7 +103,7 @@
                                 @apply mx-auto h-6 w-6 overflow-hidden;
 
                                 svg {
-                                    @apply w-6 h-6;
+                                    @apply h-6 w-6;
                                 }
                             }
 
@@ -118,29 +118,28 @@
     }
 
     #search-modal {
-        @apply fixed top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-auto overflow-x-hidden z-50 w-full max-h-full;
+        @apply fixed left-1/2 top-[30%] z-50 max-h-full w-full -translate-x-1/2 -translate-y-1/2 transform overflow-y-auto overflow-x-hidden;
 
         #wraper {
-            @apply p-4 mx-auto bg-white rounded-lg shadow dark:bg-neutral-700 w-2/3 md:w-2/3 lg:w-1/2 xl:w-1/2;
+            @apply mx-auto w-full rounded-lg bg-white p-4 shadow md:w-2/3 lg:w-1/2 xl:w-1/2 dark:bg-neutral-700;
 
             #main-container {
-                @apply p-4 md:p-5 text-center;
+                @apply p-4 text-center md:p-5;
 
                 form {
-
                     #search-wraper {
                         @apply relative;
 
                         #search-icon {
-                            @apply absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none;
+                            @apply pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3;
                         }
 
                         input {
-                            @apply block w-full p-4 ps-10 text-sm border border-neutral-300 rounded-lg bg-neutral-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:focus:ring-primary-500 dark:focus:border-primary-500;
+                            @apply focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-neutral-300 bg-neutral-50 p-4 ps-10 text-sm dark:border-neutral-600 dark:bg-neutral-700 dark:placeholder-neutral-400;
                         }
 
-                        button {
-                            @apply absolute end-2.5 bottom-2.5 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2;
+                        #search-button {
+                            @apply absolute bottom-2.5 end-2.5 rounded-lg px-4 py-2 text-sm font-medium focus:outline-none focus:ring-4;
                         }
                     }
                 }

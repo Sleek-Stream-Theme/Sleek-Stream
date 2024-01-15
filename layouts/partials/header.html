@@ -50,8 +50,7 @@
 
 
 {{ if .Site.Params.Nav.enableSearch }}
-
-<div id="search-modal" tabindex="-1" class="animate-fadeIn hidden ">
+<div id="search-modal" tabindex="-1" class="animate-fadeIn hidden">
   <div id="wraper">
     <div id="main-container">
       <form>
@@ -63,18 +62,17 @@
             }}
             {{ partial "icons/icon" $context }}
           </button>
-          <input type="search" id="default-search"
-            placeholder="Search ..." required>
+          <input type="search" id="default-search" placeholder="Search ..." required>
           <button data-modal-hide="search-modal" type="button">
             {{ $context := dict
             "vendor" "font-awesome-solid"
             "name" "xmark"
             }}
-            {{ partial "icons/icon" $context }}</button>
+            {{ partial "icons/icon" $context }}
+          </button>
         </div>
       </form>
     </div>
   </div>
 </div>
-
 {{ end }}
