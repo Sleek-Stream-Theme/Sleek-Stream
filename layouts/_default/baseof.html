@@ -1,12 +1,13 @@
     {{ partial "head.html" . }}
   <body>
+    <div id="main-wraper">
       {{ partial "header.html" . }}
       {{- partial "dev/dev-tools.html" . -}}
     <main>
       {{ block "main" . }}{{ end }}
     </main>
-    <footer>
+  </div>
       {{ partial "footer.html" . }}
-    </footer>
+      {{ partial "scripts.html" . }}
   </body>
 </html>

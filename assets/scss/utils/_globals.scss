@@ -1,7 +1,10 @@
 @layer components {
     body {
-        @apply bg-neutral-100 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200;
-        @apply bg-neutral-200 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200;
+        @apply bg-neutral-200 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200 min-h-screen;
+    }
+
+    #main-wraper {
+        min-height: 95vh;
     }
 
     main {
