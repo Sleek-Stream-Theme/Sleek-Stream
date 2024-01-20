@@ -1,0 +1,25 @@
+@layer utilities {
+
+    /* Hide scrollbar but allow scrolling */
+    :root {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-y: scroll;
+    }
+
+    :root::-webkit-scrollbar {
+        display: none;
+    }
+
+    #scroll-watcher {
+        @apply bg-primary-400 fixed top-0 z-50 w-full h-1 transform;
+        transform-origin: left;
+        animation: scroll-watcher 1s linear;
+    }
+
+    @keyframes scroll-watcher {
+        to {
+            transform: scaleX(1);
+        }
+    }
+}

@@ -2,6 +2,8 @@
 import 'flowbite';
 // Import Theme Toggle
 import './theme';
+// Import scroll Bar
+import './scroll';
 // Import Search
 import './Search';
 // Log a message indicating the site generation and the tool used

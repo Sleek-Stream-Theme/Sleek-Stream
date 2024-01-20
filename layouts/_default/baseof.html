@@ -1,6 +1,7 @@
 {{ partial "head.html" . }}
 
 <body>
+  <div id="scroll-watcher"></div>
   {{ if .Site.Params.Nav.enableSearch }}
   {{ partial "search.html" . }}
   {{ end }}
