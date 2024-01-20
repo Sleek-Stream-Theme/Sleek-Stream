@@ -35,6 +35,7 @@
   },
   "homepage": "https://github.com/Sleek-Stream-Theme/Sleek-Stream#readme",
   "devDependencies": {
+    "fuse.js": "^7.0.0",
     "npm-check": "^6.0.1",
     "prettier": "^3.2.2",
     "prettier-plugin-go-template": "^0.0.15",
@@ -46,10 +47,10 @@
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.16",
+    "flowbite": "^2.2.1",
     "postcss": "^8.4.32",
     "postcss-cli": "^11.0.0",
-    "tailwindcss": "^3.4.0",
-    "flowbite": "^2.2.1",
-    "preline": "^2.0.3"
+    "preline": "^2.0.3",
+    "tailwindcss": "^3.4.0"
   }
 }

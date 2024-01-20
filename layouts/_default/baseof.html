@@ -1,13 +1,18 @@
-    {{ partial "head.html" . }}
-  <body>
-    <div id="main-wraper">
-      {{ partial "header.html" . }}
-      {{- partial "dev/dev-tools.html" . -}}
+{{ partial "head.html" . }}
+
+<body>
+  {{ if .Site.Params.Nav.enableSearch }}
+  {{ partial "search.html" . }}
+  {{ end }}
+  <div id="main-wraper">
+    {{ partial "header.html" . }}
+    {{- partial "dev/dev-tools.html" . -}}
     <main>
       {{ block "main" . }}{{ end }}
     </main>
   </div>
-      {{ partial "footer.html" . }}
-      {{ partial "scripts.html" . }}
-  </body>
+  {{ partial "footer.html" . }}
+  {{ partial "scripts.html" . }}
+</body>
+
 </html>

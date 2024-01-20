@@ -23,6 +23,10 @@ tag = 'tags'
 # 'author' taxonomy is used for authors Information.
 author = 'authors'
 
+# Define the output formats for the 'home' section (homepage).
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
 # Sitemap configuration
 [sitemap]
 # Frequency of change for pages in the sitemap (e.g., 'daily').
