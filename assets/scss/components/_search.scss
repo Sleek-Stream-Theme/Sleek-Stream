@@ -1,0 +1,43 @@
+@layer utilities {
+    #search-modal {
+        @apply fixed left-1/2 top-[30%] z-50 min-h-full w-full -translate-x-1/2 -translate-y-1/2 transform overflow-hidden;
+
+        #main-container {
+            @apply p-4 text-center md:p-5 mx-auto w-full md:w-[calc(2/3*100vw)] lg:w-[calc(2/3*100vw)] xl:w-[calc(1/2*100vw)];
+
+            #form-wraper {
+                @apply rounded-lg bg-white p-4 shadow dark:bg-neutral-700 sticky;
+
+                form {
+                    #search-wraper {
+                        @apply relative;
+
+                        #search-icon {
+                            @apply pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3;
+                        }
+
+                        input {
+                            @apply focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-neutral-300 bg-neutral-50 p-4 ps-10 text-sm dark:border-neutral-600 dark:bg-neutral-700 dark:placeholder-neutral-400;
+                        }
+
+                        #search-button {
+                            @apply absolute bottom-2.5 end-2.5 rounded-lg px-4 py-2 text-sm font-medium focus:outline-none focus:ring-4;
+                        }
+
+                        #close {
+                            @apply absolute end-2.5 bottom-2.5 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2;
+                        }
+                    }
+                }
+            }
+
+            #result-wraper {
+                @apply rounded-lg bg-white shadow mt-2 dark:bg-neutral-700 max-h-[40lvh] overflow-auto;
+
+                section {
+                    @apply flex-auto;
+                }
+            }
+        }
+    }
+}
