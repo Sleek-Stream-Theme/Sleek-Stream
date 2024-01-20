@@ -1,7 +1,7 @@
 <div id="search-modal" tabindex="-1" class="animate-fadeIn hidden">
   <div id="main-container">
     <div id="form-wraper">
-      <form>
+      <form id="search-form" aria-label="search-form">
         <div id="search-wraper">
           <button id="search-icon" type="button">
             {{ $context := dict
@@ -10,7 +10,7 @@
             }}
             {{ partial "icons/icon" $context }}
           </button>
-          <input type="search" id="default-search" placeholder="Search ..." required />
+          <input type="text" name="search" autofocus id="default-search" placeholder="Search ..." required autocomplete="off" />
           <button data-modal-hide="search-modal" type="button" id="close">
             {{ $context := dict
               "vendor" "font-awesome-solid"
@@ -23,7 +23,7 @@
     </div>
     <div id="result-wraper">
       <section>
-        <ul id="search-results">
+        <ul id="search-results" aria-label="search-results">
           <!-- Results will be dynamically populated here -->
         </ul>
       </section>
