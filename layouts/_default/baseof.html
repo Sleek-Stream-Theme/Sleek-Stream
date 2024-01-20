@@ -2,6 +2,13 @@
 
 <body>
   <div id="scroll-watcher"></div>
+  <button onclick="scrollToTop()" id="scrollToTop" title="Go to top">
+    {{ $context := dict
+    "vendor" "bootstrap"
+    "name" "rocket"
+    }}
+    {{ partial "icons/icon" $context }}
+  </button>
   {{ if .Site.Params.Nav.enableSearch }}
   {{ partial "search.html" . }}
   {{ end }}

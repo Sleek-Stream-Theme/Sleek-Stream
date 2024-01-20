@@ -23,3 +23,14 @@
         }
     }
 }
+
+body {
+    @apply scroll-smooth;
+}
+
+
+
+
+#scrollToTop {
+    @apply hidden fixed bottom-14 right-5 z-50 text-xl border-none outline-none bg-primary-600 dark:bg-primary-400 hover:bg-primary-400 hover:dark:bg-primary-700 text-white cursor-pointer p-2 sm:p-3 rounded-full hover:opacity-100 transition;
+}
