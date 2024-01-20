@@ -1,48 +1,49 @@
 <header>
-    <nav id="main">
-      <div id="wraper">
-        <a id="logo" href="{{.Site.BaseURL }}">
-          {{ with .Site.Params.Logo }}
-          <img src="{{ . }}" alt="{{ . }}">
-          <div id="line"></div>
+  <nav id="main">
+    <div id="wraper">
+      <a id="logo" href="{{.Site.BaseURL }}">
+        {{ with .Site.Params.Logo }}
+        <img src="{{ . }}" alt="{{ . }}">
+        <div id="line"></div>
+        {{ end }}
+        <div id="title">{{ .Site.Title }}<span id="subtitle">{{ .Site.Params.SubTitle }}</div>
+      </a>
+      <div id="content">
+        <div id="main-menu">
+          <ul>
+            {{ partial "menu.html" . }}
+          </ul>
+        </div>
+        <div id="icons">
+          <!-- Search -->
+          {{ if .Site.Params.Nav.enableSearch }}
+          <button id="search-button" aria-label="Search" data-modal-target="search-modal"
+            data-modal-toggle="search-modal">
+            {{ $context := dict
+            "vendor" "bootstrap"
+            "name" "search"
+            }}
+            {{ partial "icons/icon" $context }}
+          </button>
           {{ end }}
-          <div id="title">{{ .Site.Title }}<span id="subtitle">{{ .Site.Params.SubTitle }}</div>
-        </a>
-        <div id="content">
-          <div id="main-menu">
-            <ul>
-              {{ partial "menu.html" . }}
-            </ul>
-          </div>
-          <div id="icons">
-            <!-- Search -->
-            {{ if .Site.Params.Nav.enableSearch }}
-            <button id="search-button" aria-label="Search" class="">
-                {{ $context := dict
-                    "vendor" "bootstrap"
-                    "name" "search"
-                }}
-                  {{ partial "icons/icon" $context }}
-            </button>
-            {{ end }}
-            <!-- Dark/Light Theme Toggle -->
-            {{ if .Site.Params.Nav.enableThemeToggle }}
-            <button type="button" id="theme-toggle" aria-label="Toggle Theme">
-              <span id="moon"><img src="/images/moon.png" alt="moon" /></span>
-              <span id="sun" class="hidden"><img src="/images/sun.png" alt="sun" /></span>
-            </button>
-            {{ end }}
-  
-          </div>
+          <!-- Dark/Light Theme Toggle -->
+          {{ if .Site.Params.Nav.enableThemeToggle }}
+          <button type="button" id="theme-toggle" aria-label="Toggle Theme">
+            <span id="moon"><img src="/images/moon.png" alt="moon" /></span>
+            <span id="sun" class="hidden"><img src="/images/sun.png" alt="sun" /></span>
+          </button>
+          {{ end }}
+
         </div>
       </div>
-    </nav>
-    {{/* Small Screen Nav */}}
-    <nav id="secondNav">
-      <div id="wraper">
-        <ul>
-          {{ partial "smallmenu.html" . }}
-        </ul>
-      </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+  {{/* Small Screen Nav */}}
+  <nav id="secondNav">
+    <div id="wraper">
+      <ul>
+        {{ partial "smallmenu.html" . }}
+      </ul>
+    </div>
+  </nav>
+</header>

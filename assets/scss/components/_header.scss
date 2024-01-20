@@ -1,6 +1,6 @@
 @layer utilities {
     header {
-        @apply bg-neutral-300 dark:bg-neutral-900 p-1 rounded-lg mx-1;
+        @apply mx-1 rounded-lg bg-neutral-300 p-1 dark:bg-neutral-900;
 
         nav#main {
             #wraper {
@@ -22,7 +22,7 @@
                     }
 
                     #subtitle {
-                        @apply text-primary-400 dark:text-primary-300 font-medium text-xl md:text-2xl;
+                        @apply text-primary-400 dark:text-primary-300 text-xl font-medium md:text-2xl;
                     }
                 }
 
@@ -36,14 +36,14 @@
                             @apply text-primary-700 dark:text-primary-400 flex items-center justify-center text-base;
 
                             li {
-                                @apply overflow-hidden hover:after:bg-primary-600 mr-6 pt-2 text-center after:m-auto after:block after:h-[3px] after:w-0 after:transition-all after:duration-300 hover:after:w-[100%];
+                                @apply hover:after:bg-primary-600 mr-6 overflow-hidden pt-2 text-center after:m-auto after:block after:h-[3px] after:w-0 after:transition-all after:duration-300 hover:after:w-[100%];
 
                                 a {
                                     #icon {
                                         @apply flex w-9 overflow-hidden;
 
                                         svg {
-                                            @apply w-5 h-5;
+                                            @apply h-5 w-5;
                                         }
                                     }
 
@@ -62,7 +62,7 @@
                             @apply pr-2;
 
                             svg {
-                                @apply w-6 h-6;
+                                @apply h-6 w-6;
                             }
                         }
 
@@ -103,7 +103,7 @@
                                 @apply mx-auto h-6 w-6 overflow-hidden;
 
                                 svg {
-                                    @apply w-6 h-6;
+                                    @apply h-6 w-6;
                                 }
                             }
 
