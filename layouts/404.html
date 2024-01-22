@@ -1,3 +1,33 @@
-{{ define "main" }}
+{{ partial "head.html" . }}
 
-{{ end }}
+<body>
+  <div id="scroll-watcher"></div>
+  <button onclick="scrollToTop()" id="scrollToTop" title="Go to top">
+    {{ $context := dict
+    "vendor" "bootstrap"
+    "name" "rocket"
+    }}
+    {{ partial "icons/icon" $context }}
+  </button>
+  {{ if .Site.Params.Nav.enableSearch }}
+  {{ partial "search.html" . }}
+  {{ end }}
+    {{ partial "header.html" . }}
+    {{- partial "dev/dev-tools.html" . -}}
+    <section id="error">
+      <div id="wraper">
+        <div id="main-content">
+          <h2><span>Error</span>404</h2>
+          <p id="msg">Sorry, we couldn't find this page.</p>
+          <p class="msg-2">But dont worry, you can find plenty of other things on our homepage.</p>
+          <br>
+          <a type="button" href="{{ .Site.BaseURL }}">Back to homepage</a>
+        </div>
+      </div>
+    </section>
+  {{ partial "footer.html" . }}
+  {{ partial "scripts.html" . }}
+</body>
+
+</html>
+
