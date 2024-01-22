@@ -1,0 +1,33 @@
+@layer utilities {
+    section#error {
+        @apply flex min-h-[87vh] items-center p-16;
+
+        #wraper {
+            @apply container mx-auto my-8 flex flex-col items-center justify-center px-5;
+
+            #main-content {
+                @apply max-w-md text-center;
+
+                h2 {
+                    @apply mb-8 text-9xl font-extrabold dark:text-gray-600 font-heading;
+
+                    span {
+                        @apply sr-only;
+                    }
+                }
+
+                #msg {
+                    @apply text-2xl p-3 font-semibold md:text-3xl font-body;
+                }
+
+                #msg-2 {
+                    @apply mb-8 mt-4 p-3 dark:text-gray-400 font-body;
+                }
+
+                a {
+                    @apply p-4 me-2 mb-2 text-sm font-bold text-white bg-primary-400 rounded-lg border border-none hover:bg-primary-500 focus:z-10 focus:ring-4
+                }
+            }
+        }
+    }
+}
